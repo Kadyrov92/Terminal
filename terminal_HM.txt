@@ -19,3 +19,22 @@
 19) Просмотреть содержимое длинного файла (команда less) изучите как она работает. less dir_2/1.txt
 20) Вывести дату и время date
 21) Отправить http запрос на сервер curl 'http://162.55.220.72:5005'
+22) Написать скрипт который выполнит автоматически 
+
+vim firstscript
+
+#!/bin/bash
+
+mkdir dir_1
+cd dir_1
+mkdir dir_7 dir_8 dir_9
+cd dir_7
+touch 5.txt 6.txt 7.txt 8.json 9.json
+mkdir dir_10 dir_11 dir_12
+ls -la
+mv 5.txt 6.txt dir_10
+
+ESC + :wq
+
+chmod +x firstscript
+./firstscript 
